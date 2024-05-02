@@ -53,10 +53,11 @@ IoT 개발자 과정 WPF 학습리포지토리
         - View: 화면, 순수 xaml로만 구성
         - ViewModel : 뷰에 대한 메서드, 액션, INotifyPropertyChanged를 구현
 
-    ![MVVM패턴]()
+    ![MVVM패턴](https://raw.githubusercontent.com/RiverGang/basic-wpf-2024/main/images/wpf001.png)
 
     - 권장 구혀낭법
-        - Caliburn.Ticro 3nd Party 개발 . 2009년부터 시작 2014년도 이후 더이상 개발이나 지원이 없음
+        - Caliburn.Toolkit - 3rd Party 개발 . 2009년부터 시작 2014년도 이후 더이상 개발이나 지원이 없음
+        - **Caliburn.Micro** - 3rd Party 개발, MVVM이 아주 간단/강력. 중소형 프로젝트에 적합, 디버깅이 조금 어려움
         - AvaloniaUI:  3rd Party 개발, 크로스플랫폼, 디자인 최고
         - Prism Mcrosoft 개발, 지막지하게 어렵다. 대구묘 프로젝트 활용 
 
