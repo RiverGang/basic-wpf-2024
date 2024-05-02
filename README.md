@@ -33,8 +33,51 @@ IoT 개발자 과정 WPF 학습리포지토리
         - 전통적인 윈폼 코드비하인드에서 데이터를 처리하는 것을 지양 -> 최종적으로 디자인과 개발 부분을 분리하는 것을 목적으로 함
 
 ## 3일차
-- WPF 기본학습
-    - 데이터바인딩 마무리
+- WPF에서 중요한 개념(윈폼과의 차이점)
+    1. 데이터 바인딩 - 바인딩 키워드로 코드와 분리
+    2. 옵저버패턴 - 값이 변경된 사실을 사용자에게 공지 (OnPropertyChanged 이벤트)
+    3. 디자인리소스 - 각 컨트롤마다 디자인(X), 리소스로 디자인 공유
+        - 각 화면당 Resources: 해당 화면에만 적용가능 디자인
+        - App.xaml Resources: 애플리케이션 전체 적용가능 디자인
+            - 리소스사전(Dictionary):공유할 디자인 내용이 많을 때, 독립적인 파일로 따로 지정
+
+- WPF MVVM
+    - MVC(Moder View Controller 패턴)
+        - 웹개발(Spring, ASP.NET, dJango, etc...) 현재도 사용됨
+        - Model: Data입출력 처리 담당
+        - View: 디스플레이 화면 담당 순수 xaml로만 구성
+        - Controller: View를 제어, Model 처리 중앙에 관장
+
+    - MVVM(Model View ViewModel)
+        - Modael: Data 입출력(DB side), 뷰에 제공할 데이터...
+        - View: 화면, 순수 xaml로만 구성
+        - ViewModel : 뷰에 대한 메서드, 액션, INotifyPropertyChanged를 구현
+
+    ![MVVM패턴]()
+
+    - 권장 구혀낭법
+        - Caliburn.Ticro 3nd Party 개발 . 2009년부터 시작 2014년도 이후 더이상 개발이나 지원이 없음
+        - AvaloniaUI:  3rd Party 개발, 크로스플랫폼, 디자인 최고
+        - Prism Mcrosoft 개발, 지막지하게 어렵다. 대구묘 프로젝트 활용 
+
+- Caliburn.Micro
+    1. 프로젝트 생성 후 MainWindow.xaml 삭제
+    2. Models, Views, ViewModels 폴더(네임스페이스) 생성
+    3. 종속성 NuGet패키지 Caliburn.Micro 설치
+    4. 루트 폴더에 Bootstrapper.cs 클래스 생성
+    5. App.xaml에서 StartupUri 삭제
+    6. App.xaml에 Bootstrapper 클래스를 리소스사전에 등록
+    7. App.xaml.cs에 App() 생성자 추가
+    8. ViewModels 폴더에 MainViewModel.cs 클래스 생성
+    9. Bootstrapper.cs에 OnStartup()에 내용을 변경
+    10. View 폴더에 MainView.xaml 생성
+
+    - 작업(3명) 분리
+        - DB 개발자 - DBMS 테이블 생성, Models에 클래스 작업
+        - Xaml디자이너 - Views 폴더에 있는 xaml 파일 디자인작업
+    
+    - WPF 기본학습
+    - 옵저버 패턴
     - 디자인 리소스
 - WPF MVVM
 
