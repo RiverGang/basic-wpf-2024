@@ -12,7 +12,7 @@ namespace ex07_EmployeeMngApp.Models
         public int Id { get; set; }
         public string EmpName { get; set; }
         public decimal Salary { get; set; }
-        public string Deptname { get; set; }
+        public string DeptName { get; set; }
         public string Addr { get; set; }
 
         public static readonly string SELECT_QUERY = @"SELECT [Id]
