@@ -21,6 +21,7 @@ namespace ex07_EmployeeMngApp.Models
                                                             , [DeptName]
                                                             , [Addr]
                                                          FROM [dbo].[Employees]";
+
         public static readonly string INSERT_QUERY = @"INSERT INTO [dbo].[Employees]
                                                                  ( [EmpName]
                                                                  , [Salary]
@@ -31,12 +32,14 @@ namespace ex07_EmployeeMngApp.Models
                                                                  , @Salary
                                                                  , @DeptName
                                                                  , @Addr)";
+
         public static readonly string UPDATE_QUERY = @"UPDATE [dbo].[Employees]
                                                           SET [EmpName] = @EmpName
                                                             , [Salary] = @Salary
                                                             , [DeptName] = @DeptName
                                                             , [Addr] = @Addr
                                                         WHERE Id = @Id";
+
         public static readonly string DELETE_QUERY = @"DELETE FROM [dbo].[Employees] WHERE Id = @Id";
 
     }

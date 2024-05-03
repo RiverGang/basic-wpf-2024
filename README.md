@@ -77,13 +77,19 @@ IoT 개발자 과정 WPF 학습리포지토리
         - DB 개발자 - DBMS 테이블 생성, Models에 클래스 작업
         - Xaml디자이너 - Views 폴더에 있는 xaml 파일 디자인작업
     
-    - WPF 기본학습
-    - 옵저버 패턴
-    - 디자인 리소스
-- WPF MVVM
+## 4일차
+- Caliburn.Micro
+    - 작업 분리
+        - Xaml디자이너: xaml 파일만 디자인
+        - ViewModel개발자: Model에 있는 DB 관련 정보와 View와 연계 전체구현 작업
 
+    - Caliburn.Micro 특징
+        - Xmal 디자인시 {Binding ...} 잘 사용하지 않음
+        - 대신 x:Name을 사용
 
-
+    - MVVM 특징
+        - 예외발생 시 예외메세지 표시없이 프로그램 종료
+        - ViewModel에서 디버깅 시작
 
     - 디자인 코딩방법
     - 디자인, C#코드 완전분리 개발: MVVM 디자인패턴
