@@ -13,7 +13,7 @@
     <mah:MetroWindow.IconTemplate>
         <DataTemplate>
             <iconPacks:PackIconFontAwesome Kind="UserSolid" Foreground="White" Margin="5,7,0,0"/>
-        </DataTemplate>
+       </DataTemplate>
     </mah:MetroWindow.IconTemplate>
     <Grid>
         <Grid.ColumnDefinitions>

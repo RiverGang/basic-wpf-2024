@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex07_EmployeeMngApp", "ex07_EmployeeMngApp\ex07_EmployeeMngApp.csproj", "{5734F0F4-42F4-434C-A1BC-394D24C8CB34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex10_MovieFinder2024", "ex10_MovieFinder2024\ex10_MovieFinder2024.csproj", "{995D9675-0575-4907-BBB9-F0E8BD3BC309}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5734F0F4-42F4-434C-A1BC-394D24C8CB34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5734F0F4-42F4-434C-A1BC-394D24C8CB34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5734F0F4-42F4-434C-A1BC-394D24C8CB34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{995D9675-0575-4907-BBB9-F0E8BD3BC309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{995D9675-0575-4907-BBB9-F0E8BD3BC309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{995D9675-0575-4907-BBB9-F0E8BD3BC309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{995D9675-0575-4907-BBB9-F0E8BD3BC309}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
