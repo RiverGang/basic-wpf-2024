@@ -103,5 +103,15 @@ IoT 개발자 과정 WPF 학습리포지토리
 
 
 ## 5일차
-- Caliburn.Micro + MahApps.Metro
+- MahApps.Metro (https://mahapps.com/)
     - Metro(Modern UI) 디자인 접목
+
+    ![실행화면](https://raw.githubusercontent.com/RiverGang/basic-wpf-2024/main/images/wpf003.png)
+
+    ![저장화면](https://raw.githubusercontent.com/RiverGang/basic-wpf-2024/main/images/wpf004.png)
+
+
+- Movie API 연동 앱
+    - 좋아하는 영화 즐겨찾기 앱
+    - [TMDB](https://www.themoviedb.org/) OpenAPI 활용
+    - [Youtube API](https://console.cloud.google.com/) 활용
