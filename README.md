@@ -150,6 +150,7 @@ IoT 개발자 과정 WPF 학습리포지토리
     - 공공데이터포털 API 사용
         - 인천광역시_지진대피소 API (JSON)
         - [OPENAPI](https://www.data.go.kr/data/15065594/openapi.do) 활용
+        - JSON DATA 가공
         
     - 기능
         - 옥외 지진대피소 조회
