@@ -141,7 +141,28 @@ IoT 개발자 과정 WPF 학습리포지토리
 
 ## 7일차
 - 데이터포털 API 연동앱 예제
-    - 7일차 개인프로젝트 참조 소스
 
 ## 8일차
 - WPF 개인프로젝트 포트폴리오 작업
+    ![실행화면](https://raw.githubusercontent.com/RiverGang/basic-wpf-2024/main/images/pj02.png)
+    ![지도화면](https://raw.githubusercontent.com/RiverGang/basic-wpf-2024/main/images/pj03.png)
+    
+    - 공공데이터포털 API 사용
+        - 인천광역시_지진대피소 API (JSON)
+        - [OPENAPI](https://www.data.go.kr/data/15065594/openapi.do) 활용
+        
+    - 기능
+        - 옥외 지진대피소 조회
+        - 장소분류 코드별 조회기능(콤보박스)
+        - DB 저장
+        - Google Map 연동 -> 대피장소 위치확인
+
+
+- 차후 개선
+    -  Custom Modern UI Design
+        - 색상코드
+            #0477BF
+            #398CBF
+            #03A6A6
+            #595858
+            #F2F2F2
