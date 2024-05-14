@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Incheon"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen" WindowStyle="None"
-        Height="720" Width="1080" AllowsTransparency="True" Background="Transparent">
+        Height="720" Width="1080" AllowsTransparency="True" Background="Transparent"
+        Loaded="Window_Loaded">
     <Border Background="White" CornerRadius="30">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -33,8 +34,17 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Border Grid.Row="2" Grid.Column="1" Background="#0477BF" CornerRadius="50 0 0 50" Margin="0 0 0 30"></Border>
-            <DataGrid Grid.Row="2" Grid.Column="0" Margin="20 0 20 30">
+            <Border Grid.Row="2" Grid.Column="1" Background="#0477BF" CornerRadius="50 0 0 50" Margin="0 0 0 30">
+                
+            </Border>
+            <DataGrid Grid.Row="2" Grid.Column="0" Margin="20 0 20 30"
+                      x:Name="GrdResult" IsReadOnly="True" ItemsSource="{Binding}" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Facilites_nm}" Header="시설명"  Width='280'/>
+                    <DataGridTextColumn Binding="{Binding Sgg}" Header="군구" Width='60'/>
+                    <DataGridTextColumn Binding="{Binding Address}" Header="주소"  Width='380'/>
+                    <DataGridTextColumn Binding="{Binding Facilities_id}" Header="분류"  Width='150'/>
+                </DataGrid.Columns>
             </DataGrid>
         </Grid>
 
