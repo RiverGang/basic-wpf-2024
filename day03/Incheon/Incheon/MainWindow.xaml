@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:iconPack="http://metro.mahapps.com/winfx/xaml/iconpacks"
         xmlns:local="clr-namespace:Incheon"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen" WindowStyle="None"
         Height="720" Width="1080" AllowsTransparency="True" Background="Transparent"
@@ -46,6 +47,27 @@
                     <DataGridTextColumn Binding="{Binding Facilities_id}" Header="분류"  Width='150'/>
                 </DataGrid.Columns>
             </DataGrid>
+
+            <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button>
+                    <Button.Style>
+                        <Style TargetType="Button">                            
+                            <Setter Property="Height" Value="100"/>
+                            <Setter Property="Width" Value="100"/>
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <LinearGradientBrush StartPoint="2,0" EndPoint="0.1,3">
+                                        <GradientStop Color="#2288C2"/>
+                                        <GradientStop Color="#0477BF" Offset="0.9"/>
+                                    </LinearGradientBrush>
+                                </Setter.Value>                                
+                            </Setter>
+                            <Setter Property="BorderBrush" Value="#0477BF"/>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </StackPanel>
+
         </Grid>
 
     </Border>
